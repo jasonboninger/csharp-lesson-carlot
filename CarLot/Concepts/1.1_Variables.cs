@@ -10,8 +10,11 @@
 
 
 
+			// Coming from TypeScript/JavaScript
+			// Let's assume things are the same until they are different // <!-- Thanks Toby!
+			
 			// Strongly typed language
-			// Types come before the variable
+			// Types come BEFORE the variable
 
 			string myString = "I am a string!";
 
@@ -19,7 +22,7 @@
 
 			// Types can be inferred
 			// Hover over a variable to see the inferred type
-			// This is EXACTLY the same to the compiler as the variable declaration above
+			// This is EXACTLY the same as the variable declaration above
 
 			var myOtherString = "I am also a string!!";
 
@@ -33,11 +36,27 @@
 
 
 
-			// Variables must be initialized to a value... as far as you're concerned for now
+			// Variables should be initialized to a value... as far as you're concerned for now
 
 			string myDeclaredString; // <-- Don't do this for now
 
 			string myDeclaredString2 = null; // <-- Do this for now
+
+
+
+			// Some C# types
+
+			// Boolean
+
+			bool myBoolean = true;
+
+			// Integer
+
+			int myInteger = 42;
+
+			// String
+
+			string myStr = "Hello World!";
 
 
 

@@ -30,12 +30,14 @@
 
 
 			// What's going on here?
+
 			// Reference types can always be null
 			// Value types can never be null unless they are declared with a question mark after their type
 
 
 
 			// Let's talk about strings
+
 			// Strings are special
 			// They are value types, but they always act as if they were declared with a question mark after their type
 

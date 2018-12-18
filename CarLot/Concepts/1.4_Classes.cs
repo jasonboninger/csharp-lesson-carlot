@@ -14,6 +14,8 @@ namespace CarLot.Concepts
 		// Classes can primarily have two types of declarations inside them
 
 		// 1) Member declarations
+		//
+		// Available only to instances
 
 		public int MyNumber { get; set; }
 
@@ -23,6 +25,9 @@ namespace CarLot.Concepts
 		}
 
 		// 2) Static declarations
+		//
+		// Available directly through the class
+		// Watch out for these, they are a dangerous pattern (singleton)!
 
 		public static int AnotherNumber { get; set; } // <-- Notice the static keyword
 
@@ -48,6 +53,9 @@ namespace CarLot.Concepts
 
 
 			// Let's create a "Car" class
+
+
+
 
 
 
@@ -86,7 +94,7 @@ namespace CarLot.Concepts
 
 
 
-			// When we instantiate a class we are only required to use parenthesises or curly brackets
+			// When we instantiate a class we do not necessarily need to use parenthesises and curly brackets
 			// We don't have to use both
 
 			var car3 = new Car // <-- Look ma, no parenthesises!

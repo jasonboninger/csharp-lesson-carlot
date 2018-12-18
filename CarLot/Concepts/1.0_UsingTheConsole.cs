@@ -12,6 +12,9 @@ namespace CarLot.Concepts
 
 
 
+			// The Console class
+			// A class which lets us interact with the console
+
 			// Write a line to the console followed by the newline character
 
 			Console.WriteLine("I will be written to the console.");
@@ -22,8 +25,6 @@ namespace CarLot.Concepts
 			// The input variable will be set to the user input
 
 			var input = Console.ReadLine();
-
-			Console.WriteLine(input);
 
 
 

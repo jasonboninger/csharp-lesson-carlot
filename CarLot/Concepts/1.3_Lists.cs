@@ -13,7 +13,8 @@ namespace CarLot.Concepts
 
 
 
-			// Let's use a list class
+			// The List class
+
 			// It's useful for... lists
 			// This is the closest thing in C# to an array in JavaScript
 			// There are arrays in C# but they are much more rigid than arrays in JavaScript, hence the existence of the list class
@@ -48,14 +49,13 @@ namespace CarLot.Concepts
 
 
 
-			// Iterate through the list of integers
+			// Iterate through the list of integers using a for loop
 
-			foreach (var integer in integers)
+			for (int i = 0; i < integers.Count; i++)
 			{
+				var integer = integers[i];
 				// Write to the console
-				Console.WriteLine("The value is:");
-				// Write to the console
-				Console.WriteLine(integer);
+				Console.WriteLine("The value is: " + integer);
 			}
 
 
@@ -65,11 +65,30 @@ namespace CarLot.Concepts
 
 			var strings = new List<string>();
 
+			var booleans = new List<bool>();
+
 
 
 			// Lists are strongly typed just like everything else
 
 			//strings.Add(10); // <-- Will not compile!
+
+
+
+			// Some useful methods and properties of lists
+
+			var myList = new List<string>();
+
+			// Add a value
+			myList.Add("Put me in!");
+
+			// Get the number of values
+			var itemsInMyList = myList.Count;
+
+			// Remove at an index
+			myList.RemoveAt(0);
+
+			// And many more...
 
 
 

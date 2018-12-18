@@ -17,3 +17,9 @@ namespace CarLot
 		public string Color { get; set; }
 	}
 }
+
+/*
+
+	Show TypeScript version
+
+*/
