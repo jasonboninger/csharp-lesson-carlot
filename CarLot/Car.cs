@@ -15,11 +15,27 @@ namespace CarLot
 		// || Declare a member property
 		// \/
 		public string Color { get; set; }
+
+		// || Declare a member method
+		// \/
+		public bool IsCool(string color)
+		{
+			return true;
+		}
 	}
 }
 
 /*
 
-	Show TypeScript version
+export class Car {
+
+	static makes: string[];
+
+	color: string;
+
+	isCool(): boolean {
+		return true;
+	}
+}
 
 */
