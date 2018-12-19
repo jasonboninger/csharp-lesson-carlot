@@ -1,12 +1,11 @@
-﻿using System;
-
-namespace CarLot
+﻿namespace CarLot
 {
 	class Program
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Hello World!");
+			// To see an example solution to the challenge
+			Example.CarLot.Run();
 		}
 	}
 }
