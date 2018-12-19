@@ -22,13 +22,8 @@ namespace CarLot.Example
 				Utility.WriteSeparator();
 				// Get input
 				var input = Console.ReadLine().ToLower();
-				// Check if input is not yes
-				if (input != "y" && input != "yes")
-				{
-					// Stop loop
-					break;
-				}
-				else
+				// Check if input is yes
+				if (input == "y" || input == "yes")
 				{
 					// Create car
 					var car = new Car();
@@ -38,6 +33,11 @@ namespace CarLot.Example
 					cars.Add(car);
 					// Write separator
 					Utility.WriteSeparator();
+				}
+				else
+				{
+					// Stop loop
+					break;
 				}
 			}
 			// Write separator
