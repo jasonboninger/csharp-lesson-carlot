@@ -17,7 +17,7 @@ namespace CarLot.Example
 			while (true)
 			{
 				// Write message
-				Console.WriteLine("Do you want to add" + (cars.Count == 0 ? " a" : " another") + " car?");
+				Console.WriteLine("Do you want to add " + (cars.Count == 0 ? "a" : "another") + " car?");
 				// Write separator
 				Utility.WriteSeparator();
 				// Get input
