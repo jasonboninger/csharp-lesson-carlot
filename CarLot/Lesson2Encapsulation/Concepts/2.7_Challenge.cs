@@ -18,7 +18,7 @@
 
 		// 1) Contain any type of thing.
 		// 2) Output a summary of its things.
-		// 3) Output all of the things in the lots.
+		// 3) Return all of the things in the lot.
 
 		// ** Bonus ** Allow removal of things from the lot by a unique identifier
 

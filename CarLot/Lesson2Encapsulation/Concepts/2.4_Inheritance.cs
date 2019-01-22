@@ -31,6 +31,14 @@
 			public int TestNumber { get; set; }
 		}
 
+		/* IN TYPESCRIPT \/
+		
+		export class InDepthTest extends Test {
+			testNumber: number;
+		}
+
+		/\ IN TYPESCRIPT */
+
 
 
 		// Usage

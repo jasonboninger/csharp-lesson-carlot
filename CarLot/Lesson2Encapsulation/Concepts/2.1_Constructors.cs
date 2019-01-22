@@ -24,6 +24,18 @@
 			}							// <--
 		}
 
+		/* IN TYPESCRIPT \/
+		
+		export class Test {
+			myNumber: number;
+
+			constructor(myNumber: number) {
+				this.myNumber = myNumber;
+			}
+		}
+
+		/\ IN TYPESCRIPT */
+
 		// To create an instance of the Test class we must call its constructor
 
 		public Constructors()

@@ -46,9 +46,17 @@
 		public class CoolCar : ICar, IThingOne
 		{
 			public string Color { get; set; }
-
 			public string Name { get; set; }
 		}
+
+		/* IN TYPESCRIPT \/
+		
+		export class CoolCar implements ICar, IThingOne {
+			color: string;
+			name: string;
+		}
+
+		/\ IN TYPESCRIPT */
 
 
 

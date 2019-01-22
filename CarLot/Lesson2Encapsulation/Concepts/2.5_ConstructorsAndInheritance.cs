@@ -34,6 +34,27 @@
 			}
 		}
 
+		/* IN TYPESCRIPT \/
+		
+		export class Test {
+			name: string;
+
+			constructor(name: string) {
+				this.name = name;
+			}
+		}
+		
+		export class AnotherTest extends Test {
+			location: string;
+
+			constructor(name: string, location: string) {
+				super(name);
+				this.location = location;
+			}
+		}
+
+		/\ IN TYPESCRIPT */
+
 		// Why is this only coming up now?
 
 		// Every class we've inherited from before this one has always had a default constructor
