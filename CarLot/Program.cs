@@ -5,7 +5,7 @@
 		static void Main(string[] args)
 		{
 			// To see an example solution to the challenge
-			Example.CarLot.Run();
+			Lesson1Basics.Example.CarLot.Run();
 		}
 	}
 }
