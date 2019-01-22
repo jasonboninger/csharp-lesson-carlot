@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace CarLot.Example
+namespace CarLot.Lesson1Basics.Example
 {
 	public class CarLot
 	{
@@ -16,8 +16,10 @@ namespace CarLot.Example
 			// Loop forever until break
 			while (true)
 			{
+				// Get a or another
+				var aAnother = cars.Count == 0 ? "a" : "another";
 				// Write message
-				Console.WriteLine("Do you want to add " + (cars.Count == 0 ? "a" : "another") + " car?");
+				Console.WriteLine("Do you want to add " + aAnother + " car?");
 				// Write separator
 				Utility.WriteSeparator();
 				// Get input
@@ -44,8 +46,12 @@ namespace CarLot.Example
 			Utility.WriteSeparator();
 			// Write line
 			Console.WriteLine();
+			// Get is or are
+			var isAre = cars.Count == 1 ? "is" : "are";
+			// Get s
+			var s = cars.Count == 1 ? "" : "s";
 			// Write message
-			Console.WriteLine("There " + (cars.Count == 1 ? "is" : "are") + " " + cars.Count + " car" + (cars.Count == 1 ? "" : "s") + " in your lot!");
+			Console.WriteLine("There " + isAre + " " + cars.Count + " car" + s + " in your lot!");
 			// Write line
 			Console.WriteLine();
 			// Write separator

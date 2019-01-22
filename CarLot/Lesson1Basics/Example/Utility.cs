@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CarLot.Example
+namespace CarLot.Lesson1Basics.Example
 {
 	public class Utility
 	{

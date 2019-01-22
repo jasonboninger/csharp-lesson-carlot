@@ -19,7 +19,7 @@ using System;
 
 
 
-namespace CarLot.Concepts
+namespace CarLot.Lesson1Basics.Concepts
 {
 	public class LearningNamespaces
 	{

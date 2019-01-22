@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace CarLot.Concepts
+namespace CarLot.Lesson1Basics.Concepts
 {
 	public class Challenge
 	{
