@@ -62,7 +62,7 @@ namespace CarLot.Lesson1Basics.Concepts
 			// Static declarations can be used through the class directly
 			// Set makes of cars
 
-			Car.Makes = new List<string>
+			CarExample.Makes = new List<string>
 			{
 				"Ford",
 				"Honda",
@@ -76,7 +76,7 @@ namespace CarLot.Lesson1Basics.Concepts
 			// Member declarations can be used only by an instanced of the class
 			// First, we must instantiate a car
 
-			var car = new Car();
+			var car = new CarExample();
 
 			// Then, we can set its color
 
@@ -87,7 +87,7 @@ namespace CarLot.Lesson1Basics.Concepts
 			// But, wait, there's a better way to instantiate!
 			// We can create an instance and set member properties all at once
 
-			var car2 = new Car()
+			var car2 = new CarExample()
 			{
 				Color = "Silver"
 			};
@@ -97,7 +97,7 @@ namespace CarLot.Lesson1Basics.Concepts
 			// When we instantiate a class we do not necessarily need to use parenthesises and curly brackets
 			// We don't have to use both
 
-			var car3 = new Car // <-- Look ma, no parenthesises!
+			var car3 = new CarExample // <-- Look ma, no parenthesises!
 			{
 				Color = "Black"
 			};
@@ -106,7 +106,7 @@ namespace CarLot.Lesson1Basics.Concepts
 
 			// When we use curly brackets, we are never required to set properties
 			
-			var car4 = new Car { }; // <-- This is valid
+			var car4 = new CarExample { }; // <-- This is valid
 
 
 

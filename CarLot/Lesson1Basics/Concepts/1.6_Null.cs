@@ -13,7 +13,7 @@
 			// Null is the value of nothing
 			// Classes and strings can always be null
 
-			Car car = null; // <-- No problem
+			CarExample car = null; // <-- No problem
 
 			string myString = null; // <-- No problem
 

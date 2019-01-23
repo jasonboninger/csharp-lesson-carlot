@@ -6,7 +6,7 @@ namespace CarLot
 {
 	// || Declare that the class is publicly available
 	// \/
-	public class Car
+	public class CarExample
 	{
 		// || Declare a static property
 		// \/
@@ -27,7 +27,7 @@ namespace CarLot
 
 /*
 
-export class Car {
+export class CarExample {
 
 	static makes: string[];
 
