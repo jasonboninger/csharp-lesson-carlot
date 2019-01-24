@@ -47,6 +47,13 @@ namespace CarLot.Lesson2Encapsulation.Example
 					// Stop loop
 					break;
 				}
+				else
+				{
+					// Write line
+					Console.WriteLine("That's not valid input.");
+					// Write separator
+					Utility.WriteSeparator();
+				}
 			}
 		}
 
