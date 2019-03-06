@@ -15,7 +15,7 @@
 				new Lesson2Encapsulation.Example.Lot<Lesson2Encapsulation.Example.Car, string>().ManageThings();
 				new Lesson2Encapsulation.Example.Lot<Lesson2Encapsulation.Example.Employee, int>().ManageThings();
 			}
-			if (false)
+			if (true)
 			{
 				// Run the lesson three program
 				Lesson3Review.Program.Execute(args);

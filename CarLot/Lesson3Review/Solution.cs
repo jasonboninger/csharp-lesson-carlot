@@ -8,17 +8,23 @@ namespace CarLot.Lesson3Review
 		{
 			public int Spacing { get; set; }
 			public string Divider { get; set; }
-			public ConsoleColor ForegroundColor { get; set; }
-			public ConsoleColor BackgroundColor { get; set; }
+			public ConsoleColor ForegroundColorDefault { get; set; }
+			public ConsoleColor BackgroundColorDefault { get; set; }
 
-			public Logger(int spacing = 1, string divider = "=====", ConsoleColor? foregroundColor = null, ConsoleColor? backgroundColor = null)
+			public Logger
+			(
+				int spacing = 1,
+				string divider = "=====", 
+				ConsoleColor? foregroundColorDefault = null, 
+				ConsoleColor? backgroundColorDefault = null
+			)
 			{
 				// Set spacing
 				Spacing = spacing;
 				// Set divider
 				Divider = divider;
-				// Set colors
-				_SetColors(foregroundColor, backgroundColor);
+				// Set default colors
+				_SetColorsDefault(foregroundColorDefault, backgroundColorDefault);
 			}
 
 			public void Log(params string[] texts)
@@ -57,9 +63,9 @@ namespace CarLot.Lesson3Review
 				// Get current background color
 				var backgroundColorCurrent = Console.BackgroundColor;
 				// Set foreground color
-				Console.ForegroundColor = line.ForegroundColor ?? ForegroundColor;
+				Console.ForegroundColor = line.ForegroundColor ?? ForegroundColorDefault;
 				// Set background color
-				Console.BackgroundColor = line.BackgroundColor ?? BackgroundColor;
+				Console.BackgroundColor = line.BackgroundColor ?? BackgroundColorDefault;
 				// Write line
 				Console.WriteLine(line.Text);
 				// Set foreground color
@@ -88,7 +94,7 @@ namespace CarLot.Lesson3Review
 				}
 			}
 
-			private void _SetColors(ConsoleColor? foregroundColor, ConsoleColor? backgroundColor)
+			private void _SetColorsDefault(ConsoleColor? foregroundColorDefault, ConsoleColor? backgroundColorDefault)
 			{
 				// Get current foreground color
 				var foregroundColorCurrent = Console.ForegroundColor;
@@ -97,13 +103,13 @@ namespace CarLot.Lesson3Review
 				// Reset console color
 				Console.ResetColor();
 				// Get default foreground color
-				var foregroundColorDefault = Console.ForegroundColor;
+				var foregroundColorDefaultSystem = Console.ForegroundColor;
 				// Get default background color
-				var backgroundColorDefault = Console.BackgroundColor;
+				var backgroundColorDefaultSystem = Console.BackgroundColor;
 				// Set foreground color
-				ForegroundColor = foregroundColor ?? foregroundColorDefault;
+				ForegroundColorDefault = foregroundColorDefault ?? foregroundColorDefaultSystem;
 				// Set background color
-				BackgroundColor = backgroundColor ?? backgroundColorDefault;
+				BackgroundColorDefault = backgroundColorDefault ?? backgroundColorDefaultSystem;
 				// Set foreground color
 				Console.ForegroundColor = foregroundColorCurrent;
 				// Set background color
